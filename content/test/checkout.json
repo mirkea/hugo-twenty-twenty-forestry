@@ -1,0 +1,458 @@
+{
+   "overview": {
+     "header": {
+       "greeting": {
+         "morning": "Godmorgon", 
+         "afternoon": "God eftermiddag", 
+         "evening": "God kväll"
+       }, 
+       "introSign": "<0>{{greeting}} {{recipient.givenName}}</0>!\nHär är dokumentet som <0>{{sender.givenName}} {{sender.familyName}}</0> har skickat. Du kan <0>Signera</0> med <0>{{method}}</0>",
+       "introSign_plural": "<0>{{greeting}} {{recipient.givenName}}</0>!\nHär är dokumenten som <0>{{sender.givenName}} {{sender.familyName}}</0> har skickat. Du kan <0>Signera</0> with <0>{{method}}</0>",
+       "introReview": "<0>{{greeting}} {{recipient.givenName}}</0>,\nHär är dokumentet som <0>{{sender.givenName}} {{sender.familyName}}</0> har skickat. Du behöver <0>Godkänna</0> för att slutföra processen.",
+       "introReview_plural": "<0>{{greeting}} {{recipient.givenName}}</0>!\nHär är dokumenten som <0>{{sender.givenName}} {{sender.familyName}}</0> har skickat. Du behöver <0>Godkänna</0> för att slutföra processen.",
+       "message": "Meddelande från {{sender.givenName}}",
+       "progress": "{{completed}}/{{count}} dokument färdigställda",
+       "progress_short": "{{completed}}/{{count} färdigställda",
+       "completed": "Kuvert färdigställt",
+       "tooltip": {
+         "message": "Visa meddelande från avsändaren.",
+         "progress": "Hur många dokument i kuvertet som är färdigställda av dig.",
+         "collapseSidebar": "Collapse the details",
+         "expandSidebar": "Expand for details"
+       }
+     },
+     "body": {
+       "expires": "Expires",
+       "tooltip": {
+         "attachments": "Hur många bilagor som medföljer dokumentet.",
+         "expiration": "Löper ut {{expiration}}"
+       }
+     },
+     "footer": {
+       "envelopeDetails": "Kuvertet",
+       "help": "Support",
+       "contact": {
+         "info": "Questions regarding the document? ",
+         "info_plural": "Questions regarding the documents?",
+         "action": "Send e-mail to sender"
+       },
+       "switch": {
+         "label": "Du använder den <0>nya versionen</0> av signeringsverktyget.",
+         "action": "Växla till den gamla versionen"
+       },
+       "tooltip": {
+         "language": "Ändra språk",
+         "envelopeDetails": "Se kuvertets status och vägen fram till färdigställande",
+         "help": "Ta reda på mer om processen i Verifieds checkout"
+       }
+     }
+   },
+   "document": {
+     "action": {
+       "sign": "Signera dokument",
+       "sign_short": "Signera",
+       "approve": "Godkänna dokument",
+       "approve_short": "Godkänna",
+       "next": "Nästa dokument",
+       "next_short": "Nästa",
+       "decline": "Avböj dokument",
+       "decline_short": "Avböj",
+       "history": "See history"
+     },
+     "body": {
+       "attachment": "Följande bilaga tillhör dokumentet, granska innan du signerar eller godkänner",
+       "attachment_plural": "Följande {{count}} bilagor tillhör dokumentet, granska dem innan du signerar eller godkänner",
+       "rejectedBy": {
+         "you": "av dig",
+         "other": "av en annan mottagare"
+       },
+       "status": {
+         "pending": "Pågående",
+         "pending_short": "Pågående",
+         "signed": "Signerat av dig",
+         "signed_short": "Signerat",
+         "reviewed": "Godkänt av dig",
+         "reviewed_short": "Godkänt",
+         "declined": "Avböjt {{rejectedBy}}",
+         "declined_short": "Avböjt",
+         "rejected": "Avböjt {{rejectedBy}}",
+         "rejected_short": "Avböjt",
+         "aborted": "Avbröts av {{sender.givenName}} {{sender.familyName}}",
+         "aborted_short": "Avbröts"
+       }
+     },
+     "footer": {
+       "header": "Du har nått slutet av dokumentet",
+       "body": {
+         "pending": "Vänligen välj något av följande",
+         "completed": "Du har utfört dina uppgifter på det här dokumentet"
+       }
+     },
+     "tooltip": {
+       "transactionLog": "Transaktionslogg",
+       "download": "Ladda ner originaldokumentet",
+       "decline": "Avböj det här dokumentet",
+       "sign": "Fortsätt att signera det här dokumentet",
+       "signDisabled": "Granska hela dokumentet för att låsa upp möjligheten att signera",
+       "approve": "Fortsätt att godkänna det här dokumentet",
+       "approveDisabled": "Granska hela dokumentet för att låsa upp möjligheten att godkänna",
+       "next": "Fortsätt till det första pågående dokumentet",
+       "continue": "Fortsätt till slutet av signeringsprocessen"
+     }
+   },
+   "completed": {
+     "documentsSigned":{
+       "noRedirect":{
+         "header": "Tack!\nDu är klar med dina uppgifter!",
+         "body": "Vad händer nu?"
+       },
+       "redirectDefaultFlow":{
+         "header": "Tack!\nDu är klar med dina uppgifter!",
+         "body": {
+           "info": "Det färdigställda dokumentet skickas till dig\nnär alla parter är klara med sina uppgifter",
+           "info_plural": "De färdigställda dokumenten skickas till dig\nnär alla parter är klara med sina uppgifter"
+         }
+       },
+       "redirectCustomFlow":{
+         "header": "Dina uppgifter är slutförda!",
+         "body": {
+           "info": "Fortsätt med nästa steg i processen"
+         }
+       }
+     },
+     "documentsRejected":{
+       "noRedirect":{
+         "header": "Dina uppgifter är slutförda!",
+         "body": {
+           "info": "Du har avböjt dokumentet",
+           "info_plural": "Du har avböjt alla dokument",
+           "whatsNext": "Avsändaren kan eventuellt återkoppla med information."
+         }
+       },
+       "redirect":{
+         "header": "Dina uppgifter är slutförda!",
+         "body": {
+           "info": "Du har avböjt dokumentet",
+           "info_plural": "Du har avböjt alla dokument"
+         }
+       }
+     },
+     "action": {
+       "continue": "Information om Verified",
+       "continueURL": "https://www.verified.eu/se/",
+       "documents": "Dokument",
+       "redirect": "Fortsätt {{seconds}}"
+     }
+   },
+   "help": {
+     "header": "Support",
+     "body": {
+       "info": "Läs mer om Verifieds nya checkout",
+       "topics": {
+         "general": [
+           {
+             "header": "Introduktion",
+             "body": "Verifieds checkout ger dig möjlighet att granska och utföra uppgifter på alla dokument i kuvertet som är skickat till dig. Här kan du utföra de uppgifter som är tilldelade dig, till exempel läsa, godkänna, signera och avböja dokument.\n\nVerifieds checkout-wizard hjälper och guidar dig genom stegen, ett dokument i taget, till dess att alla steg är genomförda.\n\nDe huvudsakliga uppgifterna finns högst upp på sidan ovanför dokumenten.\n\nAlternativt kan du välja att läsa och utföra uppgifter på specifika dokument genom att välja ett önskat dokument från menyn till vänster på sidan."
+           },
+           {
+             "header": "Kuvert",
+             "body": "Ett kuvert innehåller ett eller flera dokument och eventuellt tillhörande bilagor som är skickat till en eller flera mottagare. När en mottagare väl har slutfört de önskade uppgifterna för varje enskilt dokument (till exempel godkänna, signera eller avböja), kommer kuvertet att skickas vidare till övriga mottagare som därefter fullföljer sina uppgifter. När alla mottagare har utfört sina uppgifter blir kuvertet färdigställt. Efter att ett kuvert blivit färdigställt, kommer alla dokument som signerats/godkänts och således blivit färdigställda (när ingen av mottagarna har avböjt) att skickas till de berörda parterna (mottagaren/mottagarna och avsändaren). "
+           },
+           {
+             "header": "Dokument och bilagor",
+             "body": "Huvudokument är PDF:er som kräver att en uppgift utförs på dem (signera, godkänna eller avböja). Dokumentet eller dokumenten skickas till alla mottagare som angetts av avsändaren. Tillhörande bilagor (till exempel PDF, XLS, DOC, PPT etc.) kan också kopplas till varje respektive huvuddokument. Huvuddokumentet (PDF) och alla eventuella tillhörande bilagor måste granskas av mottagaren innan denne utför sina tilldelade uppgifter (signera/godkänna). Du kan ladda ner dokument genom att klicka på ladda ner. Nedladdade dokument är alltid originalversionerna av huvuddokumentet - signerade dokument skickas via e-post när alla mottagare utfört sina uppgifter."
+           },
+           {
+             "header": "Mottagare",
+             "body": "Mottagare är de som tar emot inbjudan via e-post att utföra uppgifter på dokumenten i kuvertet, till exempel genom att signera, godkänna eller avböja. Mottagare kan behöva autentisera sig med BankID eller SMS, beroende på vilken säkerhetsnivå avsändaren angett. Efter att ett kuvert har blivit färdigställt genom att alla dokument blivit färdigställda (när ingen har avböjt), skickas detta till alla berörda parter (kuvertets mottagare och kuvertets avsändare). "
+           },
+           {
+             "header": "Uppgifter att utföra på dokumentet",
+             "body": "De flesta kuvert kräver att du utför specifika uppgifter, till exempel signera eller godkänna (alternativt avböja). Vilken uppgift som är tilldelad dig är angiven av avsändaren. Du kan färdigställa dina uppgifter genom att använda dig av knapparna för att signera och godkänna och navigera dig vidare genom processen. Alternativt kan du välja att granska och utföra uppgifter på specifika dokument genom att välja ett dokument i listan. Om du inte vill signera eller godkänna kan du välja att avböja dokumentet, och samtidigt ange en anledning/kommentar. När ett dokument i kuvertet blir avböjt, skickas det specifika dokumentet inte vidare till eventuella övriga mottagare i flödet och avsändaren får en notis om att du avböjt."
+           },
+           {
+             "header": "Dokumentstatus",
+             "body": "Dokumentstatus visas ovanför huvuddokumentet. Den kan visa 'Pågående' till dess att mottgaren/mottagarna signerat, godkänt eller avböjt. När ett dokument blivit signerat eller godkänt blir statusen uppdaterad på alla ställen där status visas i Verifieds checkout."
+           },
+           {
+             "header": "Transaktionslogg för dokumentet",
+             "body": "För att granska transaktionsloggen för ett specifikt dokument, klicka på ikonen för 'transaktionslogg' precis bredvid namnet på dokumentet ovanför dokumentvisaren. Transaktionsloggen visar en komplett historik av de utförda uppgifterna för dokumentet för både avsändaren och alla mottagare, från skapandet till färdigställandet. "
+           },
+           {
+             "header": "Kuvertets förlopp",
+             "body": "Du kan se kuvertets utveckling i det blå området för summering som visar hur många uppgifter du redan har utfört och hur många du har kvar att utföra - till exempel. '1 av 3 dokument färdigställt'. Efter att uppgiften på ett dokument är utfört, kommer både dokumentstatus och kuvertets förloppsindikator uppdateras automatiskt. "
+           },
+           {
+             "header": "Kuvertstatus",
+             "body": "För att se en summering av kuvertet, klicka på 'Kuvertstatus', under listan av dokument. Här får du information om kuvertets status, vilka mottagare som har utfört sina uppgifter och vad som förväntas hända när du utfört dina uppgifter."
+           },
+           {
+             "header": "Kuvertets färdigställande",
+             "body": "När du utfört dina uppgifter på dokumentet eller dokumenten är kuvertet färdigställt utifrån din roll. Det slutliga steget är att klicka på 'Färdigställ processen' som omdirigerar dig till avsändarens val av webbplats. Du kommer att få information om kuvertets flöde, till exempel vilka övriga mottagare (om sådana finns) som fortfarande behöver utföra uppgifter. När alla mottagare i ett flöde har utfört sina uppgifter, kommer de färdigställda dokumenten skickas till de berörda parterna inklusive avsändaren. Dokument som avböjts av en mottagare (eller flera mottagare i ett parallellt flöde)  räknas inte som 'färdigställda' och inkluderas ej."
+           }
+         ],
+         "signWithBankID": [
+           {
+             "header": "Signering med BankID",
+             "body": "När du signerar med BankID behöver du Mobilt BankID med app installerad på din telefon, eller BankID på dator installerat. Installation av BankID kan du göra med hjälp av din bank. "
+           }
+         ],
+         "signWithNEMID": [
+           {
+             "header": "Signering med NEMID",
+             "body": "När du signerar med NEMID behöver du ha eventuella programvaror, appar och/eller kodbrickor tillgängliga för att kunna slutföra processen."
+           }
+         ],
+         "signWithTouch": [
+           {
+             "header": "Touch Sign",
+             "body": "När en avsändare begärt att du ska signera med Touch Sign kan du använda en enhet som har stöd för en 'touch screen', till exempel en surfplatta eller mobiltelefon. Det går att utföra signaturen med datormus på vanlig dator. Om du inte är nöjd med signaturens utseende kan du klicka på pilen i det övre högra hörnet. När du är nöjd, klicka 'signera dokumentet' för att slutföra processen."
+           }
+         ],
+         "signWithEmail": [
+           {
+             "header": "Signering med e-post",
+             "body": "När du klickat dig vidare till Verfieds checkout från e-postinbjudan behöver du bara klicka 'Signera dokument' för att slutföra processen."
+           }
+         ],
+         "signWithSMS": [
+           {
+             "header": "Signering med SMS",
+             "body": "När en avsändare har angett att du ska signera med SMS, behöver du ange en kod som du får via SMS, när du påbörjat signeringsprocessen.\n\nFör att signera, behöver du enheten som telefonnumret som avsändaren angett tillhör."
+           }
+         ],
+         "signWithNETSTupas": [
+           {
+             "header": "Signering med NETS FTN",
+             "body": "När du ska signera med NETS FTN, behöver du kunna logga in i din bank för att slutföra signeringsprocessen."
+           }
+         ],
+         "approve": [
+           {
+             "header": "Godkänna dokument",
+             "body": "När en avsändare begärt att du ska godkänna dokument behöver du granska alla dokument och deras eventuella bilagor innan slutligt godkännande kan utföras. Bara godkända dokument skickas vidare till nästkommande mottagare i flödet."
+           }
+         ]
+       }
+     },
+     "action": {
+       "more": "Läs mer"
+     }
+   },
+   "signingProgress": {
+     "header": "Information om kuvertets förlopp",
+     "body": {
+       "info": "Information om kuvertets status och vad som förväntas hända efter alla utförda uppgifter.",
+       "completed": {
+         "header": "Mottagaren färdigställt",
+         "header_plural": "Mottagarna färdigställt",
+         "body": "<0>{{previousRecipients}}</0> har redan färdigställt sina uppgifter",
+         "body_plural": "<0>{{previousRecipients}}</0> har redan färdigställt sina uppgifter"
+       },
+       "inProgress": {
+         "header": "Pågående",
+         "body": "<0>Du</0> har blivit inbjuden att granska och signera eller godkänna dokument i kuvertet"
+       },
+       "pending": {
+         "header": "Mottagaren väntar",
+         "header_plural": "Mottagarna väntar",
+         "body": "<0>{{upcomingRecipients}}</0>\när ännu inte klar med sina uppgifter för kuvertet",
+         "body_plural": "<0>{{upcomingRecipients}}</0>\när ännu inte klara med sina uppgifter för dokumenten i kuvertet"
+       },
+       "onCompletion": {
+         "header": "Kuvertet slutfört",
+         "body": "<0>Alla mottagare</0>\nfår färdigställda dokument"
+       },
+       "waiting": "Signeringsprocessen slutförs..."
+     },
+     "loading": {
+       "sign": "Förbereder för att signera med <0>{{signingMethod}}</0>. Vänligen vänta...",
+       "approve": "Förbereder för att godkänna. Vänligen vänta...",
+       "decline": "Förbereder för att <0>avböja</0>. Vänligen vänta..."
+     },
+     "tooltip": {
+       "confirmToSign": "Vänligen godkänn ovanstående villkor",
+       "confirmToDecline": "Vänligen ange kommentar/anledning och bekräfta att du önskar avböja",
+       "drawSignature": "Vänligen gör din signatur"
+     }
+   },
+   "transactionLog": {
+     "header": "Transaktionslogg",
+     "body": "Historik för dokumentet",
+     "dateFormat": "Datumformat: ÅÅÅÅ-MM-DD",
+     "timezone": "Tidszon: CET"
+   },
+   "signModal": {
+     "header": "Signera dokument med {{signingMethod}}",
+     "body": {
+       "infoSign": "<0>Signera</0> för att färdigställa processen",
+       "infoContinue": "Klicka <0>Fortsätt</0> för att gå vidare till signering",
+       "infoForBankidSE": "Välj <0>{{signBankidSEDesktop}}</0> eller <0>{{signBankidSEMobile}}</0> för att färdigställa processen",
+       "phone": "Vi har skickat en kod till <0>{{phoneNumber}}</0>",
+       "phoneWarning": "Om du inte mottagit meddelandet, kontrollera att du har tillräcklig uppkoppling och försök igen om en liten stund.",
+       "phoneChange": "Om du vill använda ett annat telefonnummer behöver du kontakta avsändaren (se ursprunlig inbjudan för kontaktuppgifter)",
+       "ssn": "Vänligen ange ditt personnummer",
+       "ssnInvalid": "Format för personnummer: {{format}}",
+       "waitingForSigningProcess": "Väntar på signering...",
+       "waitingForBankidSEDesktop": "Skriv in din säkerhetskod i BankID-appen och välj Legitimera eller Skriv under.",
+       "waitingForBankidSEMobile": "Skriv in din säkerhetskod i BankID-appen och välj Legitimera eller Skriv under.",
+       "waitingTooMuch": {
+         "body": "Signeringsprocessen tar för lång tid",
+         "action": "Avbryt signering"
+       },
+       "signWithTouch": {
+         "body": "Vänligen gör din signatur",
+         "action": {
+           "clear": "Sudda"
+         }
+       }
+     },
+     "tooltip": {
+       "sessionID": "Det här är transaktionens sessions-ID. Det ska matcha med informationen i det SMS du har mottagit.",
+       "SMSCode": "Ange kod för signering som du har fått via SMS"
+     },
+     "action": {
+       "sign": "Signera dokument",
+       "signBankidSEMobile": "Mobilt BankID",
+       "signBankidSEDesktop": "BankID",
+       "validateSmsCode": "Validera kod",
+       "resendSmsCode": "Skicka ny kod",
+       "readMoreAboutSMS": {
+         "label": "Läs mer",
+         "url": "https://support.verified.eu/hc/en-us/articles/360015355279"
+       },
+       "launchBankidSEMobileApp": "Klicka för att öppna BankID-appen",
+       "agree": {
+         "withDocument": "Jag är säker på att jag vill signera aktuellt dokument",
+         "withAttachment": "och godkänner bilagan",
+         "withAttachment_plural": "och godkänner bilagorna"
+       }
+     }
+   },
+   "approveModal": {
+     "header": "Godkänna dokument",
+     "body": {
+       "info": "<0>Godkänn</0> för att slutföra processen",
+       "phone": "Godkänn genom att ange den sexsiffriga koden vi skickat till ditt nummer, <0>som slutar på {{phoneNumberLastDigits}}</0>"
+     },
+     "action": {
+       "sign": "Godkänn dokument",
+       "agree": {
+         "withDocument": "Jag är säker på att jag vill godkänna aktuellt dokument",
+         "withAttachment": "och godkänner bilagan",
+         "withAttachment_plural": "och godkänner bilagorna"
+       }
+     }
+   },
+   "rejectModal": {
+     "header": "Avböj dokument",
+     "body": {
+       "info": "Vänligen ange kommentar/anledning och bekräfta att du önskar avböja dokumentet",
+       "reason": {
+         "dontAgree": "Jag håller inte med om innehållet i dokumentet",
+         "notEnoughInfo": "Jag har inte tillräckligt med information",
+         "wrongPerson": "Jag är inte rätt person att utföra uppgiften.",
+         "alreadyActed": "Jag har redan utfört en uppgift på det här dokumentet i en annan situation",
+         "other": "Annan anledning"
+       }
+     },
+     "placeholder": {
+       "reason": "Ange anledning här"
+     },
+     "action": {
+       "decline": "Avböj",
+       "confirm": "Jag bekräftar att jag vill <0>avböja</0> dokumentet"
+     }
+   },
+   "completeModal": {
+     "body": {
+       "title": "Dina uppgifter för dokumentet\när utförda",
+       "info": "När alla mottagare har slutfört sina uppgifter\nmottar du en bekräftelse"
+     },
+     "action": {
+       "continue": "Fortsätt till checkout"
+     }
+   },
+   "error": {
+     "signingFailed": {
+       "header": "Dokumentet signerades inte",
+       "timeout": "Signeringssessionen råkade ut för en time out. Vänligen försök igen",
+       "generic": "Ett fel inträffade i signeringsprocessen och ditt dokument kunde inte hanteras, Vänligen försök igen om en liten stund.",
+       "action": "Försök igen"
+     },
+     "approveFailed": {
+       "body": "Ett fel uppstod när dokumentet skulle godkännas."
+     },
+     "generic": {
+       "header": "Ett fel har uppstått",
+       "body": "Ett fel uppstod när vi försökte hämta kuvertet.",
+       "message": "Signeringssessionen är ett ogiltigt tillstånd",
+       "error": "Fel:",
+       "code": "Felkod:",
+       "retry": "Försök igen",
+       "expandError": "Mer information",
+       "contractError": "Mindre information"
+     },
+     "emailSigningFailed": {
+       "body": "Ett fel uppstod när dokumentet skulle signeras med e-post."
+     },
+     "SMSSigningFailed": {
+       "body": "Signeringssessionen med SMS kunde inte starta."
+     },
+     "touchSigningFailed": {
+       "body": "Ett fel uppstod när dokumentet skulle signeras med Touch Sign."
+     },
+     "rejectFailed": {
+       "body": "Ett fel uppstod när dokumentet skulle avböjas."
+     },
+     "envelopeRejected": {
+       "header": "Kuvertet avböjdes",
+       "body": "Kuvertet avböjdes av en mottagare. Du kan inte längre signera eller godkänna det.",
+       "action": {
+         "label": "Vad betyder det här?",
+         "url": "https://verified.zendesk.com/hc/en-us/articles/360010943959"
+       }
+     },
+     "envelopeExpired": {
+       "header": "Kuvertet har förfallit",
+       "body": "Datumet har löpt ut för kuvertet. Du kan inte längre signera eller godkänna.",
+       "action": {
+         "label": "Vad betyder det här?",
+         "url": "https://verified.zendesk.com/hc/en-us/articles/360010944139"
+       }
+     },
+     "envelopeAborted": {
+       "header": "Kuvertet blev avbrutet",
+       "body": "Kuvertet avbröts av avsändaren och du kan inte längre signera eller godkänna det."
+     },
+     "invalidToken": {
+       "header": "Fel behörighetstoken",
+       "body": "Länken du försöker nå innehåller en felaktig behörighetstoken. En vanlig orsak kan vara att länken du fått via e-post har blivit bruten. Äldre versioner av e-postklienter (till exempel Outlook 2007) klarar inte alltid av långa länkar. Om det sker kan ett alternativ vara att öppna mailet i en annan e-postklient (webbmail eller i mobilen).",
+       "action": {
+         "label": "Vad betyder det här?",
+         "url": "https://verified.zendesk.com/hc/en-us/articles/115002552172"
+       }
+     },
+     "contactSupport": {
+       "body": {
+         "platform": "Platform",
+         "envelopeId": "Kuvert-ID",
+         "recipientId": "ID för Mottagare",
+         "flowName": "Flödesnamn",
+         "ticketSending": "Skapa ett supportärende...",
+         "ticketSendingError": "Supportärendet kunde inte skapas. Vänligen försök senare.",
+         "ticketSent": "<0>Ditt supportärende är skapat!</0>\nVi kontaktar dig på e-postadress {{email}} när vi har kontrollerat ärendet."
+       },
+       "action": {
+         "contact": "Rapportera ett problem"
+       }
+     },
+     "pageNotFound": {
+       "header": "Hoppsan!\nSidan du söker finns inte.",
+       "action": {
+         "label": "Ta mig till startsidan",
+         "url": "https://www.verified.eu"
+       }
+     }
+   }
+ }
